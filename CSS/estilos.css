@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar las opciones en el menú */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #FCDE5B, #C5D779, #6FCCA9, #18C2D8);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.submenu li {
+    border-bottom: 1px solid #fff;
+}
+
+/* Ajusta el espaciado y los colores según tus preferencias */
+.submenu li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.bienvenido {
+    padding: 10px 20px;
+}
+.seccion1 {
+    background: url('../Media/torres.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+.contenido {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al principio */
+}
+
+.informacion {
+    flex: 1; /* Toma el espacio restante en la izquierda */
+    background-color: rgba(255, 255, 255, 0.7); /* Color blanco con opacidad */
+    color: black;
+}
+
+.imagen {
+    text-align: center; /* Alinea el texto debajo de la imagen al centro */
+    margin-left: 20px; /* Espacio entre la información y la imagen */
+}
+
+.imagen img {
+    width: 60%; /* Ajusta el ancho de la imagen según tus necesidades */
+}
+
+.seccion2 {
+    display: flex; /* Usar flexbox para dividir en dos columnas */
+}
+/* Añade estilos para el texto */
+
+
+.izquierda {
+    flex: 1; /* Hace que ocupe la mitad del ancho */
+    background: url('../Media/alpinismo.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.derecha {
+    flex: 1; /* Hace que ocupe la otra mitad del ancho */
+    background: url('/Media/nubes.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.izquierda p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: left;
+}
+.derecha p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: left;
+}
+/* Estilos para la lista de implementos necesarios */
+.izquierda ul {
+    list-style-type: none; /* Cambia el marcador de la lista a un punto */
+    padding-left: 20px; /* Añade un poco de sangría a la lista */
+}
+
+footer {
+    background: #6391C0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.footer-image #iz {
+    width: 90px; /* Ajusta el ancho según tus necesidades */
+}
+
+.footer-image #der{
+    width: 150px;
+}
