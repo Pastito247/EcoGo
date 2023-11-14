@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Media/naturaa.jpg');
+}
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar las opciones en el menú */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #FCDE5B, #C5D779, #6FCCA9, #18C2D8);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.submenu li {
+    border-bottom: 1px solid #fff;
+}
+
+/* Ajusta el espaciado y los colores según tus preferencias */
+.submenu li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+
+.container,
+.container2,
+.container3 {
+    display: inline-block;
+    margin: 10px; /* Puedes ajustar el margen según tus necesidades */
+}
+.container img,
+.container2 img,
+.container3 img {
+    height: 500px; /* Establece la altura deseada para las imágenes */
+}
+.container{
+    margin-left: 10%;
+}
+#inicio{
+    width: 100% ;
+}
+
+h1{
+    background-color: rgba(245, 245, 245);
+}

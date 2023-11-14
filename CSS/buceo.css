@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Media/fondomar.jpg');
+}
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar las opciones en el menú */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #FCDE5B, #C5D779, #6FCCA9, #18C2D8);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.submenu li {
+    border-bottom: 1px solid #fff;
+}
+
+/* Ajusta el espaciado y los colores según tus preferencias */
+.submenu li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+.container {
+    display: inline-block;
+    margin: 10px; /* Ajusta el margen según tus necesidades */
+    text-align: center;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#container1{
+    margin-left: 15%;
+}
+.container img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 150px;
+    border-radius: 50%; /* Da un borde redondeado a las imágenes */
+}
+
+.text {
+    margin-top: 10px;
+}

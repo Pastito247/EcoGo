@@ -19,12 +19,12 @@ function guardarNombre(){
         alert("seleccione tipo de usuario");
     }else{
         sessionStorage.setItem("nombre", usuario);
+        sessionStorage.setItem("tipo", value);
         if(value === "Apoyo" || value === "Profesor"){
             window.location.href = 'lobbyProfe.html';
         }else{
-            window.location.href = 'actividades.html'
+            window.location.href = 'lobby.html'
         }
-
     }
 
 };
